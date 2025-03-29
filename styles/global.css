@@ -1,5 +1,56 @@
 * {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+:root {
+
+    --font-family: "Poppins", sans-serif; /**/
+
+    --fw-regular: 400; /*menu\\texto-usuaria\\text-icons\\footer\\*/
+    --fw-bold: 700; /*nome-usuaria\\*/
+    
+    --fs-normal: 1rem; /*menu\\*/
+    --fs-14:0.875rem; /*texto-usuaria\\text-icons\\footer\\*/
+    --fs-24: 1.5rem; /* nome-usuaria--mobile\\*/
+    --fs-32: 2rem; /*nome-usuaria--desktop\\*/
+
+    /* line height */
+    --lh-125: 125%; /*nome-usuaria\\*/
+    --lh-150: 150%; /*menu\\footer\\*/
+    --lh-170: 170%; /*texto-usuaria\\text-icons\\*/
+
+    /* letter spacing */
+
+
+    /* Identity Product colors*/
+    --brand-color:#EF5F4C; /*icons\\logo\\explorar-hover*/
+
+    /* shape colors */
+    --backgroud-color: #FFFFFF;
+    --surface-color: #F5F5F5; /* photo-galery-background\\ */
+    --skeleton-color: #D9D9D9; /*header-background\\ about-section-background\\ */
+    --shape-transparency: #FFFFFF56;
+    /* text colors */
+    --text-color-primary: #313131; /*nome-usuaria\\*/
+    --text-color-secondary: #6C6C6C; /*menu-text\\texto-usuaria\\text-icons\\footer*/
+    
+}
+
+html {
+    font-family: var(--font-family);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-14);
+    line-height: var(--lh-170);
+    color: var(--text-color-secondary);
+}
+
+body {
+    background-color: var(--backgroud-color);
 }
