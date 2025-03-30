@@ -1,0 +1,59 @@
+footer {
+
+    padding-inline: 1rem;
+
+    & p,
+    div {
+        text-align: center;
+    }
+
+    & div {
+        display: grid;
+        gap: 1rem;
+
+        margin-inline: auto;
+    }
+}
+
+
+@media (min-width: 280px) {
+
+    footer {
+
+        & div {
+            display: flex;
+            gap: 1rem;
+
+            margin-inline: auto;
+        }
+    }
+}
+
+@media (min-width: 520px) {
+
+    footer {
+        display: flex;
+        flex-direction: row;
+
+        padding-inline: 2rem;
+
+        & p {
+            /* display: flex; */
+
+            margin-right: auto;
+        }
+
+        & div {
+            /* display: flex; */
+            /* margin-left: auto; */
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    main {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+}
