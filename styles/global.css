@@ -26,9 +26,6 @@
     --lh-150: 150%; /*menu\\footer\\*/
     --lh-170: 170%; /*texto-usuaria\\text-icons\\*/
 
-    /* letter spacing */
-
-
     /* Identity Product colors*/
     --brand-color:#EF5F4C; /*icons\\logo\\explorar-hover*/
 
@@ -41,6 +38,13 @@
     --text-color-primary: #313131; /*nome-usuaria\\*/
     --text-color-secondary: #6C6C6C; /*menu-text\\texto-usuaria\\text-icons\\footer*/
     
+    /* paddings globais */
+    /* padding no eixo X */
+    --px-base: 1rem;
+    --px-info: 2rem;
+    /* padding no eixo Y */
+    --py-base: 1.5rem;
+    --py-info: 2rem;
 }
 
 html {
@@ -53,4 +57,13 @@ html {
 
 body {
     background-color: var(--backgroud-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--brand-color);
 }

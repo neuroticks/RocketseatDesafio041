@@ -1,0 +1,72 @@
+.px-base {
+    padding-inline: var(--px-base);
+}
+
+.px-info {
+    padding-inline: var(--px-info);
+}
+
+.py-base {
+    padding-block: var(--py-base);
+}
+
+.py-info {
+    padding-block: var(--py-info);
+}
+
+.container {
+    --max-width: 360px;
+    
+    /* só pra visualização -- DELETAR */
+    border: 1px solid violet;
+    margin-inline: auto;
+}
+
+.desktop-only {
+    display: none;
+}
+
+/* even-columns prepara layout para colunas(desktop)/linhas(mobile) de tamanhos e espaçamentos iguais */
+.even-columns {
+    display: grid;
+    gap: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-0\.5 {
+    gap: .5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+@media (min-width: 600px) {
+    .container {
+        --max-width: 77em;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
