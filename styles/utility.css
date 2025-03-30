@@ -15,8 +15,9 @@
 }
 
 .container {
+    min-width: 270px;
     --max-width: 360px;
-    
+
     /* só pra visualização -- DELETAR */
     border: 1px solid violet;
     margin-inline: auto;
@@ -56,17 +57,27 @@
     display: grid;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 520px) {
     .container {
-        --max-width: 77em;
+        --max-width: 100%;
     }
 
     .desktop-only {
         display: initial;
     }
 
-    .even-columns {
+    /* .even-columns {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
+    } */
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        /* garante centralização do conteudo */
+        margin-inline: auto;
+        /* garante largura máxima */
+        max-width: 1280px;
     }
 }
